@@ -1,0 +1,51 @@
+{
+   "abstract" : "git commands imported as System::Sub subs in git:: namespace",
+   "author" : [
+      "Olivier Mengu\u00c3\u00a9 <dolmen@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Git-Sub",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "File::Which" : "0",
+            "System::Sub" : "0",
+            "strict" : "0",
+            "subs" : "0",
+            "warnings" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "Test::More" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "https://github.com/dolmen/p5-Git-Sub",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/dolmen/p5-Git-Sub.git",
+         "web" : "https://github.com/dolmen/p5-Git-Sub"
+      }
+   },
+   "version" : "0.130170"
+}
+

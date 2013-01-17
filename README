@@ -1,0 +1,13 @@
+
+
+This archive contains the distribution Git-Sub,
+version 0.130170:
+
+  git commands imported as System::Sub subs in git:: namespace
+
+This software is copyright (c) 2012 by Olivier Mengué.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+
