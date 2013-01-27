@@ -3,13 +3,14 @@ abstract: 'git commands imported as System::Sub subs in git:: namespace'
 author:
   - 'Olivier Mengué <dolmen@cpan.org>'
 build_requires:
+  Cwd: 0
   File::Find: 0
   File::Temp: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -25,4 +26,4 @@ requires:
 resources:
   homepage: https://github.com/dolmen/p5-Git-Sub
   repository: https://github.com/dolmen/p5-Git-Sub.git
-version: 0.130170
+version: 0.130270

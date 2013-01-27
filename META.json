@@ -4,7 +4,7 @@
       "Olivier Mengu\u00c3\u00a9 <dolmen@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300029, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -31,6 +31,7 @@
       },
       "test" : {
          "requires" : {
+            "Cwd" : "0",
             "File::Find" : "0",
             "File::Temp" : "0",
             "Test::More" : "0"
@@ -46,6 +47,6 @@
          "web" : "https://github.com/dolmen/p5-Git-Sub"
       }
    },
-   "version" : "0.130170"
+   "version" : "0.130270"
 }
 

@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package Git::Sub;
 {
-  $Git::Sub::VERSION = '0.130170';
+  $Git::Sub::VERSION = '0.130270';
 }
 # ABSTRACT: git commands imported as System::Sub subs in git:: namespace
 
@@ -38,12 +38,13 @@ sub import
 
 package git;
 {
-  $git::VERSION = '0.130170';
+  $git::VERSION = '0.130270';
 }
 
 use subs
     # Common commands
-    qw(commit tag push add rm branch checkout clone fetch init log
+    qw(version
+       commit tag push add rm branch checkout clone fetch init log
        mv notes pull push rebase reset revert status),
     # Ancillary commands
     qw(config filter_branch prune remote repack),
@@ -87,7 +88,7 @@ Git::Sub - git commands imported as L<System::Sub> subs in the git:: namespace
 
 =head1 VERSION
 
-version 0.130170
+version 0.130270
 
 =head1 SYNOPSIS
 
@@ -102,6 +103,15 @@ version 0.130170
 
     # Commands names with '-' are imported with '_'
     my $master = git::rev_parse 'release';
+
+    # Return in list context is lines (see System::Sub)
+    say for git::ls_tree 'master';
+
+    # Process lines using a callback
+    git::ls_tree 'master' => sub {
+        my ($mode, $type, $object, $file) = split;
+        say $file;
+    };
 
 =head1 DESCRIPTION
 

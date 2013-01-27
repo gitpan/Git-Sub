@@ -1,3 +1,4 @@
+Changes
 LICENSE
 MANIFEST
 META.json
@@ -9,3 +10,4 @@ examples/ex-rev-parse.pl
 lib/Git/Sub.pm
 t/00-compile.t
 t/author-test-eol.t
+t/git.t

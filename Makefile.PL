@@ -12,6 +12,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "git commands imported as System::Sub subs in git:: namespace",
   "AUTHOR" => "Olivier Mengu\303\251 <dolmen\@cpan.org>",
   "BUILD_REQUIRES" => {
+    "Cwd" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Test::More" => 0
@@ -31,7 +32,7 @@ my %WriteMakefileArgs = (
     "subs" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.130170",
+  "VERSION" => "0.130270",
   "test" => {
     "TESTS" => "t/*.t"
   }
